@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Catálogo</h1>
+
+        <div class="controls">
+            <button id="btnPeliculas" class="btn-primary">LISTA DE PELÍCULAS</button>
+            <button id="btnSeries" class="btn-primary">LISTA DE SERIES</button>
+        </div>
+
+        <div id="sortControls" class="hidden">
+            <label for="sortSelect">Ordenar por:</label>
+            <select id="sortSelect"></select>
+        </div>
+
+        <div id="resultados" class="grid"></div>
+
+        <div class="forms-container">
+            <div class="form-box">
+                <h3>Agregar Película</h3>
+                <form id="formPelicula">
+                    <input type="text" id="pNombre" placeholder="Nombre" required>
+                    <input type="text" id="pDirector" placeholder="Director" required>
+                    <input type="number" id="pAnio" placeholder="Año de estreno" required>
+                    <button type="submit">AGREGAR NUEVA PELÍCULA</button>
+                </form>
+            </div>
+
+            <div class="form-box">
+                <h3>Agregar Serie</h3>
+                <form id="formSerie">
+                    <input type="text" id="sNombre" placeholder="Nombre" required>
+                    <input type="number" id="sAnio" placeholder="Año de estreno" required>
+                    <input type="number" id="sTemporadas" placeholder="N° Temporadas" required>
+                    <button type="submit">AGREGAR NUEVA SERIE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
